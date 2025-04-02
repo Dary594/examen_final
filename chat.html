@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+        createChat({
+	webhookUrl: 'https://alan89.app.n8n.cloud/webhook/748beec2-e745-40b6-81a3-ed72fdfe6316/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		'hola! soy tu asistente persona 👋',
+		'¿Cómo puedo ayudarle hoy?'
+	],
+	i18n: {
+		en: {
+			title: 'hola 👋',
+			subtitle: "Estamos aquí para ayudarte las 24 horas del día, los 7 días de la semana.",
+			footer: '',
+			getStarted: 'Nueva conversación',
+			inputPlaceholder: 'Escribe tu pregunta.',
+		},
+	},
+});
+    </script>
+
+</body>
+</html>
