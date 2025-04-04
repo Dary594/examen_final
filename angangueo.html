@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angangueo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: blue">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+        createChat({
+	webhookUrl: 'https://alan89.app.n8n.cloud/webhook/748beec2-e745-40b6-81a3-ed72fdfe6316/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		'hola! soy tu asistente persona 👋',
+		'¿Cómo puedo ayudarle hoy?'
+	],
+	i18n: {
+		en: {
+			title: 'hola 👋',
+			subtitle: "Estamos aquí para ayudarte las 24 horas del día, los 7 días de la semana.",
+			footer: '',
+			getStarted: 'Nueva conversación',
+			inputPlaceholder: 'Escribe tu pregunta.',
+		},
+	},
+});
+    </script>
+
+<div class="titulos">
+    <h1>Angangueo Michoacan</h1>
+    <h2>Lugares Turisticos</h2>
+</div>
+    <div class="lugares"> 
+        <img src="imagenes/Angangueo-Michoacan-Mariposas.webp" alt="Imagen de fondo" class="imagen">
+        <a href="rosario.html" class="lugares boton1">vista el santuario el rosario</a>
+        <a href="chincua.html" class="lugares boton2">visitar el Santuario Sierra Chincua </a>
+        <a href="tunel.html" class="lugares boton3">Explorar el Túnel Turístico San Simón y el Museo Casa Parker </a>
+        <a href="templo.html" class="lugares boton4">Templo de la Inmaculada Concepción y la Parroquia de San Simón Celador.</a>       
+    </div>
+
+    <div class="contenedor">
+            <img src="imagenes/angangueo-1.jpg" alt="Imagen de fondo">
+            <div class="texto"> <h1>¡Conoce Angangueo!</h1> 
+                En Michoacán, en la Sierra Madre Oriental, se encuentra Angangueo, 
+                un pueblo con un importante pasado minero. Su nombre da cuenta
+                de las características de su geografía y significa lo mismo
+                “pueblo entre montañas” que “a la entrada de la cueva”,
+                “cosa muy alta” o “dentro del bosque”. Es uno de los
+                afortunados lugares que la mariposa monarca eligió como 
+                santuario, de ahí que sus cielos se pinten durante algunos
+                meses con su dorado batir de alas.
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="titulo2">
+            <h1>"EN ANGANGUEO TAMBIEN PUDES VISITAR"</h1>
+        </div>
+        <br>
+        <a href="mural.html">
+            <div class="imagen2">
+                <img src="imagenes/mariposas_angangueo_05.jpg" alt="Imagen con título">
+                <div class="titulo">Mural de Jorge Téllez</div>
+            </div>
+        </a>
+        <a href="monumento.html">
+            <div class="imagen2">
+                <img src="imagenes/descarga.jpeg" alt="Imagen con título">
+                <div class="titulo">Momumento al Minero</div>
+            </div>
+        </a>
+        
+        <a href="mirador.html">
+            <div class="imagen2">
+                <img src="imagenes/mirador1.png" alt="Imagen con título">
+                <div class="titulo">Miradores</div>
+            </div>
+        </a>
+        <a href="casa_parker.html">
+            <div class="imagen2">
+                <img src="imagenes/casa parker (1).jpeg" alt="Imagen con título">
+                <div class="titulo">Casa Parker</div>
+            </div>
+        </a>
+            
+                
+        
+
+</body>
+</html>
